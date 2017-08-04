@@ -81,24 +81,24 @@ WSGI_APPLICATION = 'techparcel.wsgi.application'
 
 
 import dj_database_url
-
-if os.environ.get('IN_HEROKU', True):
-    #  DATABASES = {
-    #      'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    #  }
-     DATABASES = {'default': dj_database_url.config(default='postgres://bcwommgjtzlpvf:ce93be036dca5f8b6f843345d8127ec660b6c02a0909f9bac10dc3fde33139f8@ec2-54-204-32-145.compute-1.amazonaws.com:5432/drdbqg5i1l0nu')}
-    #import dj_database_url
-    #DATABASES['default'] =  dj_database_url.config()
-
-else:
-    DATABASES = {
-       'default': {
-           'ENGINE': 'django.db.backends.sqlite3',
-           'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-       }
-   }
-
-    DEBUG = True
+DATABASES['default'] = dj_database_url.config(default='postgres://bcwommgjtzlpvf:ce93be036dca5f8b6f843345d8127ec660b6c02a0909f9bac10dc3fde33139f8@ec2-54-204-32-145.compute-1.amazonaws.com:5432/drdbqg5i1l0nu')
+# if os.environ.get('IN_HEROKU', True):
+#     #  DATABASES = {
+#     #      'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#     #  }
+#      DATABASES = {'default': dj_database_url.config(default='postgres://bcwommgjtzlpvf:ce93be036dca5f8b6f843345d8127ec660b6c02a0909f9bac10dc3fde33139f8@ec2-54-204-32-145.compute-1.amazonaws.com:5432/drdbqg5i1l0nu')}
+#     #import dj_database_url
+#     #DATABASES['default'] =  dj_database_url.config()
+#
+# else:
+#     DATABASES = {
+#        'default': {
+#            'ENGINE': 'django.db.backends.sqlite3',
+#            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#        }
+#    }
+#
+#     DEBUG = True
 
 CACHES = {
     'default': {
