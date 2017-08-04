@@ -86,7 +86,7 @@ if os.environ.get('IN_HEROKU', True):
     #  DATABASES = {
     #      'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     #  }
-     DATABASES = {'default': dj_database_url.config(default='postgres://zzzlnasrzrxchz:c16a70fbe1675568d23abda0e3307edd952f9ebcd8d4fb142b9c2f74cba33847@ec2-50-17-217-166.compute-1.amazonaws.com:5432/dduiej9jv28ak4')}
+     DATABASES = {'default': dj_database_url.config(default='postgres://bcwommgjtzlpvf:ce93be036dca5f8b6f843345d8127ec660b6c02a0909f9bac10dc3fde33139f8@ec2-54-204-32-145.compute-1.amazonaws.com:5432/drdbqg5i1l0nu')}
     #import dj_database_url
     #DATABASES['default'] =  dj_database_url.config()
 
