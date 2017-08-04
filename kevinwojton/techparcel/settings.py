@@ -81,11 +81,12 @@ WSGI_APPLICATION = 'techparcel.wsgi.application'
 
 
 import dj_database_url
-if os.environ.get('IN_HEROKU', False):
+
+if os.environ.get('IN_HEROKU', True):
     #  DATABASES = {
     #      'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     #  }
-     DATABASES = {'default': dj_database_url.config(default=os.environ["DATABASE_URL"])}
+     DATABASES = {'default': dj_database_url.config(default='postgres://zzzlnasrzrxchz:c16a70fbe1675568d23abda0e3307edd952f9ebcd8d4fb142b9c2f74cba33847@ec2-50-17-217-166.compute-1.amazonaws.com:5432/dduiej9jv28ak4')}
     #import dj_database_url
     #DATABASES['default'] =  dj_database_url.config()
 
