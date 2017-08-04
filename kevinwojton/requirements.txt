@@ -9,10 +9,7 @@ django-compress==1.0.1
 django-pipeline==1.4.5
 django-appconf==0.6
 django-compressor==1.4
-grunt==0.1.1
-kombu==3.0.24
 pyserial==2.7
-python-amazon-product-api==0.2.8
 pytz==2014.10
 requests==2.4.3
 
