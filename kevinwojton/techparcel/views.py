@@ -18,19 +18,28 @@ class start(CreateView):
     success_url = '/thanks'
     template_name = "index.html"
 
-    def form_valid(self, form):
-
-        # form.send_email()
-        return super(start, self).form_valid(form)
+    # def form_valid(self, form):
+    #
+    #     # form.send_email()
+    #     return super(start, self).form_valid(form)
 
 class thanks(TemplateView):
+    model = email_subscribers
     template_name = "thanks.html"
+    success_url = '/thanks'
 
-class community(TemplateView):
+
+class community(CreateView):
     template_name = "community.html"
+    success_url = '/thanks'
+    model = email_subscribers
 
-class technology(TemplateView):
+class technology(CreateView):
     template_name = "technology.html"
+    success_url = '/thanks'
+    model = email_subscribers
 
-class wellness(TemplateView):
+class wellness(CreateView):
     template_name = "wellness.html"
+    success_url = '/thanks'
+    model = email_subscribers

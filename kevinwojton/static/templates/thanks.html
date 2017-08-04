@@ -65,7 +65,7 @@
 
 		<!-- One -->
 			<section id="one" class="wrapper style2">
-				<div class="inner" style="text-align:center;font-size:40px;color:black;">
+				<div class="inner" id="thanks" style="text-align:center;font-size:40px;color:black;">
 					Thank you for subscribing!
 				</div>
 			</section>
@@ -231,52 +231,7 @@
 		<!-- Footer -->
 			<footer id="footer" class="wrapper">
 				<div class="inner">
-					<section>
-						<div class="box">
-							<div class="content">
-								<h2 class="align-center">Join our mailing list!
-									Hello
-									<form action="" method="post">
-										{% csrf_token %}
-    							{{ form.as_p }}
-								    <input type="submit" value="Send message" />
-								</form>	lskfj
 
-									 Shhhh... Its a secret.</h2>
-								<hr />
-								<form action="#" method="post">
-
-									<div class="field half first">
-										<label for="name">Name</label>
-										<input name="name" id="name" type="text" placeholder="Name">
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input name="email" id="email" type="email" placeholder="Email">
-									</div>
-									<div class="field">
-										<label for="dept">Department</label>
-										<div class="select-wrapper">
-											<select name="dept" id="dept">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
-									</div>
-									<ul class="actions align-center">
-										<li><input value="Send Message" class="button special" type="submit"></li>
-									</ul>
-								</form>
-							</div>
-						</div>
-					</section>
 				</div>
 			</footer>
 

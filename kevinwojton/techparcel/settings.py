@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'p^ub5@m$2gg%f8gnhyh45yo8d%m=h7*&-4+sy^$*9cubuvildq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
 

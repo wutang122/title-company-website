@@ -22,6 +22,7 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
+					<li><a href="/">Home</a></li>
 					<li><a href="/wellness">Wellness</a></li>
 					<li><a href="/technology">Technology</a></li>
 					<li><a href="/community">Community</a></li>
@@ -69,39 +70,32 @@
 							<div class="content">
 								<h2 class="align-center">Get in Touch</h2>
 								<hr />
-								<form action="#" method="post">
+								<form action="" method="post" >
+
+									{% csrf_token %}
+
 									<div class="field half first">
-										<label for="name">Name</label>
-										<input name="name" id="name" type="text" placeholder="Name">
+										<label for="name" style="font-size:20px;">Name</label>
+										{{ form.name }}
 									</div>
 									<div class="field half">
-										<label for="email">Email</label>
+										<label for="email" style="font-size:20px;">Email</label>
 										<input name="email" id="email" type="email" placeholder="Email">
 									</div>
+
 									<div class="field">
-										<label for="dept">Department</label>
-										<div class="select-wrapper">
-											<select name="dept" id="dept">
-												<option value="">- Category -</option>
-												<option value="1">Manufacturing</option>
-												<option value="1">Shipping</option>
-												<option value="1">Administration</option>
-												<option value="1">Human Resources</option>
-											</select>
-										</div>
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+										<label for="message" style="font-size:20px;">Message</label>
+										{{ form.message }}
 									</div>
 									<ul class="actions align-center">
 										<li><input value="Send Message" class="button special" type="submit"></li>
 									</ul>
+
 								</form>
 							</div>
 						</div>
 					</section>
-					
+
 				</div>
 			</footer>
 
