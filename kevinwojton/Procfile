@@ -1,1 +1,1 @@
-web: gunicorn techparcel.wsgi:application --log-file
+web: gunicorn techparcel.wsgi --log-file -
