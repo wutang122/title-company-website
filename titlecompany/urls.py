@@ -16,12 +16,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', start.as_view()),
-    url(r'^wellness$', wellness.as_view()),
-    url(r'^community$', community.as_view()),
-    url(r'^technology$', technology.as_view()),
     url(r'^thanks$', thanks.as_view()),
-
-
     (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
 
     url(r'^' + admin_media_url , 'django.views.static.serve', {'document_root': admin_media_path,}, name='admin-media'),
