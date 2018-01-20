@@ -2,11 +2,11 @@
 
 This program is a really basic django web application. There is no complicated logic besides just rendering the 4 static pages and text to run.   
 
-Run these commands:   
+Run these commands:     
 
 `git init`  
-`git@github.com:kfwojton/cleveland_rocks.git` 
-`cd cleveland_rocks`  
+`git@github.com:kfwojton/titlecompany.git`   
+`cd titlecompany`    
 
 install this --> https://pip.pypa.io/en/stable/installing/  
 install this --> https://virtualenv.pypa.io/en/stable/  
